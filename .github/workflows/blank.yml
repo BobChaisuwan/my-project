@@ -52,4 +52,9 @@ jobs:
         id: deployment
         with:
           token: '${{ github.token }}'
+          
       - uses: chrnorm/deployment-status@releases/v1
+        name: Update status
+        id: update
+        with:
+          token: '${{ github.token }}'
