@@ -1,3 +1,3 @@
 # my-project
 
-#update document
+#update doc
