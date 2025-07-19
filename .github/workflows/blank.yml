@@ -37,8 +37,7 @@ jobs:
           echo test, and deploy your project.
           
   deploy:
-    name: Deploy my app
-
+    name: Deploy
     runs-on: ubuntu-latest
 
     permissions:
@@ -52,6 +51,3 @@ jobs:
         id: deployment
         with:
           token: '${{ github.token }}'
-          environment-url: http://my-app-url.com
-          environment: production
-        # more steps below where you run your deployment scripts inside the same action
