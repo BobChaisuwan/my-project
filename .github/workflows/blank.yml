@@ -51,4 +51,3 @@ jobs:
         id: deployment
         with:
           token: '${{ github.token }}'
-          environment-url: https://github.com/BobChaisuwan/my-project
