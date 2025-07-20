@@ -42,7 +42,7 @@ jobs:
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: chrnorm/deployment-action@releases/v1
         
       - name: Update deployment status (success)
         if: success()
@@ -50,6 +50,7 @@ jobs:
         with:
           token: "${{ github.token }}"
           state: "success"
+          deployment_id: "${{ steps.deployment.outputs.deployment_id }}"
 
 
        
