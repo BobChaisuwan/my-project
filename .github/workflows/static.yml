@@ -48,8 +48,6 @@ jobs:
         with:
           token: "${{ github.token }}"
           state: "success"
-          deployment_id: "${{ steps.deployment.outputs.deployment_id }}"
-
 
 
        
