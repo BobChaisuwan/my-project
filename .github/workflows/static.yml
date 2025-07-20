@@ -43,6 +43,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: chrnorm/deployment-action@releases/v1
+        with:
+          token: '${{ github.token }}'
         
       - name: Update deployment status (success)
         if: success()
